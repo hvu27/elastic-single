@@ -144,8 +144,6 @@ services:
         condition: service_healthy
       es02:
         condition: service_healthy
-      es03:
-        condition: service_healthy
     image: docker.elastic.co/kibana/kibana:${STACK_VERSION}
     volumes:
       - certs:/usr/share/kibana/config/certs
